@@ -1,5 +1,5 @@
 (function () {
-  let CenterX,CenterY, outerRadius
+  let CenterX,CenterY, outerRadius;
 
   function calculateClockSize () {
     let ScreenWidth  = g.getWidth();
