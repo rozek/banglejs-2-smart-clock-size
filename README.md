@@ -28,7 +28,7 @@ let Clockwork = require(...);
 Clockwork.windUp({
   size: require('https://raw.githubusercontent.com/rozek/banglejs-2-smart-clock-size/main/ClockSize.js'),
   ...
-}});
+});
 ```
 
 ## Example ##
