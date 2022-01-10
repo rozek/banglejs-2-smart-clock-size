@@ -13,6 +13,12 @@ If those widgets are small and well placed in the corners of a Bangle's display,
  </tr>
 </table>
 
+> Note: right now, `require`ing this module produces an annoying error message in the Espruino Web IDE:
+>
+> ![](ErrorToast.png)
+>
+> Despite this message, the module seems to be working properly (see this [discussion in the Espruino forum](http://forum.espruino.com/conversations/371705/))
+
 ## Usage ##
 
 Within a clock implementation, the module may be used as follows:
