@@ -13,6 +13,8 @@ If those widgets are small and well placed in the corners of a Bangle's display,
  </tr>
 </table>
 
+> Note: if you plan to use the full size returned by this calculator, you should consider including [Widgets on Background](https://github.com/rozek/banglejs-2-widgets-on-background) (as shown in the examples) in order to prevent widgets from erasing parts of your clock.
+
 > Note: right now, `require`ing this module produces an annoying error message in the Espruino Web IDE:
 >
 > ![](ErrorToast.png)
@@ -24,6 +26,8 @@ If those widgets are small and well placed in the corners of a Bangle's display,
 Within a clock implementation, the module may be used as follows:
 
 ```
+require('https://raw.githubusercontent.com/rozek/banglejs-2-widgets-on-background/main/drawWidgets.js');
+
 let Clockwork = require(...);
 Clockwork.windUp({
   size: require('https://raw.githubusercontent.com/rozek/banglejs-2-smart-clock-size/main/ClockSize.js'),
@@ -36,6 +40,8 @@ Clockwork.windUp({
 The following code shows a complete example for a (still simple) analog clock using this clock size calculator:
 
 ```
+require('https://raw.githubusercontent.com/rozek/banglejs-2-widgets-on-background/main/drawWidgets.js');
+
 let Clockwork = require('https://raw.githubusercontent.com/rozek/banglejs-2-simple-clockwork/main/Clockwork.js');
 
 Clockwork.windUp({
