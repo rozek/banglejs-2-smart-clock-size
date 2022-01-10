@@ -6,8 +6,12 @@ This module calculates the size of an analog clock face for the [Bangle.js 2](ht
 
 If those widgets are small and well placed in the corners of a Bangle's display, this module allows a clock face to become significantly larger than a [simple clock size calculation](https://github.com/rozek/banglejs-2-simple-clock-size).
 
-![](simpleClockSize.png)
-![](smartClockSize.png)
+<table>
+ <tr valign="top">
+   <td align="center"><img src="simpleClockSize.png"><br>simple clock size calculator</td>
+   <td align="center"><img src="smartClockSize.png"><br>smart clock size calculator</td>
+ </tr>
+</table>
 
 ## Usage ##
 
