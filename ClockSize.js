@@ -1,9 +1,9 @@
 (function () {
-  let CenterX,CenterY, outerRadius;
+  var CenterX,CenterY, outerRadius;
 
   function calculateClockSize () {
-    let ScreenWidth  = g.getWidth();
-    let ScreenHeight = g.getHeight();
+    var ScreenWidth  = g.getWidth();
+    var ScreenHeight = g.getHeight();
 
     CenterX = ScreenWidth/2;
     CenterY = ScreenHeight/2;
@@ -14,15 +14,15 @@
 
   /**** calculate total space consumption of all loaded widgets ****/
 
-    let WidgetLayouts = {
+    var WidgetLayouts = {
       tl:{ x:0,             y:0,               Direction:0 },
       tr:{ x:ScreenWidth-1, y:0,               Direction:1 },
       bl:{ x:0,             y:ScreenHeight-24, Direction:0 },
       br:{ x:ScreenWidth-1, y:ScreenHeight-24, Direction:1 }
     };
 
-    for (let Widget of WIDGETS) {
-      let WidgetLayout = WidgetLayouts[Widget.area];     // reference, not copy!
+    for (var Widget of WIDGETS) {
+      var WidgetLayout = WidgetLayouts[Widget.area];     // reference, not copy!
       if (WidgetLayout == null) { continue; }
 
       Widget.x = WidgetLayout.x - WidgetLayout.Direction * Widget.width;
@@ -33,8 +33,8 @@
 
   /**** now find the largest circle that fits in between ****/
 
-    let x,y, dx,dy;
-    let cx = CenterX, cy = CenterY, r = Math.min(cx,cy), oldR;
+    var x,y, dx,dy;
+    var cx = CenterX, cy = CenterY, r = Math.min(cx,cy), oldR;
 
     if (WidgetLayouts.tl.x > 0) {
       x = WidgetLayouts.tl.x; y = WidgetLayouts.tl.y+24; dx = x - cx; dy = y - cy;
