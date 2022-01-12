@@ -1,4 +1,4 @@
-(function () {
+;(function () {
   var CenterX,CenterY, outerRadius;
 
   function calculateClockSize () {
