@@ -25,7 +25,7 @@ If those widgets are small and well placed in the corners of a Bangle's display,
 
 Within a clock implementation, the module may be used as follows:
 
-```
+```javascript
 require('https://raw.githubusercontent.com/rozek/banglejs-2-widgets-on-background/main/drawWidgets.js');
 
 let Clockwork = require(...);
@@ -39,7 +39,7 @@ Clockwork.windUp({
 
 The following code shows a complete example for a (still simple) analog clock using this clock size calculator:
 
-```
+```javascript
 require('https://raw.githubusercontent.com/rozek/banglejs-2-widgets-on-background/main/drawWidgets.js');
 
 let Clockwork = require('https://raw.githubusercontent.com/rozek/banglejs-2-simple-clockwork/main/Clockwork.js');
